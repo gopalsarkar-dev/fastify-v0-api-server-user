@@ -6,6 +6,7 @@
       "dependencies": {
         "@fastify/autoload": "^6.0.0",
         "@fastify/sensible": "^6.0.0",
+        "@fastify/type-provider-typebox": "^5.1.0",
         "@prisma/client": "^6.8.2",
         "fastify": "^5.0.0",
         "fastify-cli": "^7.4.0",
@@ -45,6 +46,8 @@
 
     "@fastify/sensible": ["@fastify/sensible@6.0.3", "", { "dependencies": { "@lukeed/ms": "^2.0.2", "dequal": "^2.0.3", "fastify-plugin": "^5.0.0", "forwarded": "^0.2.0", "http-errors": "^2.0.0", "type-is": "^1.6.18", "vary": "^1.1.2" } }, "sha512-Iyn8698hp/e5+v8SNBBruTa7UfrMEP52R16dc9jMpqSyEcPsvWFQo+R6WwHCUnJiLIsuci2ZoEZ7ilrSSCPIVg=="],
 
+    "@fastify/type-provider-typebox": ["@fastify/type-provider-typebox@5.1.0", "", { "peerDependencies": { "@sinclair/typebox": ">=0.26 <=0.34" } }, "sha512-F1AQHeLiKp1hu6GMWm5W6fZ6zXQ0mTV+qHOzrptAie9AYewvFr5Q3blfy8Qmx9gUgwA3Yj+CWvQQJeTwDgTnIg=="],
+
     "@isaacs/cliui": ["@isaacs/cliui@8.0.2", "", { "dependencies": { "string-width": "^5.1.2", "string-width-cjs": "npm:string-width@^4.2.0", "strip-ansi": "^7.0.1", "strip-ansi-cjs": "npm:strip-ansi@^6.0.1", "wrap-ansi": "^8.1.0", "wrap-ansi-cjs": "npm:wrap-ansi@^7.0.0" } }, "sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA=="],
 
     "@istanbuljs/schema": ["@istanbuljs/schema@0.1.3", "", {}, "sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA=="],
@@ -72,6 +75,8 @@
     "@prisma/fetch-engine": ["@prisma/fetch-engine@6.8.2", "", { "dependencies": { "@prisma/debug": "6.8.2", "@prisma/engines-version": "6.8.0-43.2060c79ba17c6bb9f5823312b6f6b7f4a845738e", "@prisma/get-platform": "6.8.2" } }, "sha512-lCvikWOgaLOfqXGacEKSNeenvj0n3qR5QvZUOmPE2e1Eh8cMYSobxonCg9rqM6FSdTfbpqp9xwhSAOYfNqSW0g=="],
 
     "@prisma/get-platform": ["@prisma/get-platform@6.8.2", "", { "dependencies": { "@prisma/debug": "6.8.2" } }, "sha512-vXSxyUgX3vm1Q70QwzwkjeYfRryIvKno1SXbIqwSptKwqKzskINnDUcx85oX+ys6ooN2ATGSD0xN2UTfg6Zcow=="],
+
+    "@sinclair/typebox": ["@sinclair/typebox@0.34.33", "", {}, "sha512-5HAV9exOMcXRUxo+9iYB5n09XxzCXnfy4VTNW4xnDv+FgjzAGY989C28BIdljKqmF+ZltUwujE3aossvcVtq6g=="],
 
     "@tsconfig/node10": ["@tsconfig/node10@1.0.11", "", {}, "sha512-DcRjDCujK/kCk/cUe8Xz8ZSpm8mS3mNNpta+jGCA6USEDfktlNvm1+IuZ9eTcDbNk41BHwpHHeW+N1lKCz4zOw=="],
 
