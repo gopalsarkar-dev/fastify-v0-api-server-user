@@ -35,7 +35,7 @@ const removeaccount: FastifyPluginAsyncTypebox = async (
               id: id,
             },
           });
-          return reply.send({ message: "User successfully deleted" });
+          return reply.code(200).send({ message: "User successfully deleted" });
         } else {
           reply.code(404).send({ message: "User not found" });
         }
