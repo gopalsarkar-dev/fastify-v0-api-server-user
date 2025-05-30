@@ -13,11 +13,6 @@ const removeaccount: FastifyPluginAsyncTypebox = async (
       params: Type.Object({
         id: Type.String(),
       }),
-      response: {
-        "2xx": Type.Object({
-          message: Type.String(),
-        }),
-      },
     },
     handler: async (request, reply) => {
       const { id } = request.params;
@@ -37,11 +32,15 @@ const removeaccount: FastifyPluginAsyncTypebox = async (
           });
           return reply.code(200).send({ message: "User successfully deleted" });
         } else {
-          reply.code(404).send({ message: "User not found" });
+          return reply
+            .code(404)
+            .send({ message: "User not found at this time" });
         }
       } catch (error) {
         console.error(error);
-        reply.code(500).send({ message: "Delete operation failed" });
+        return reply.code(500).send({
+          message: "Failed to Remove user account-due to server error",
+        });
       }
     },
   });
