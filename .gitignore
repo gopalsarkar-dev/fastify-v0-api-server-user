@@ -65,3 +65,6 @@ test/types/index.js
 dist
 
 /src/generated/prisma
+
+#env file
+.env*
