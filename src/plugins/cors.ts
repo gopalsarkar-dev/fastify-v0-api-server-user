@@ -1,7 +1,7 @@
 import fastifyCors, { FastifyCorsOptions } from "@fastify/cors";
-import fastifyPlugin from "fastify-plugin";
+import fp from "fastify-plugin";
 
-export default fastifyPlugin<FastifyCorsOptions>((fastify) => {
+export default fp<FastifyCorsOptions>(async (fastify) => {
   fastify.register(fastifyCors, {
     origin: "*",
   });
