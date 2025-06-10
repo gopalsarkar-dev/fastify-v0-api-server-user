@@ -11,7 +11,7 @@ datasource db {
 }
 
 model User {
-  id String @id @unique @default(uuid())
+  uId String @id @unique @default(uuid())
 
   first_name String
 
@@ -20,4 +20,6 @@ model User {
   email String @unique
 
   gender String
+
+ 
 }

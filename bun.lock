@@ -5,6 +5,7 @@
       "name": "fastify-v0-api-server-user",
       "dependencies": {
         "@fastify/autoload": "^6.0.0",
+        "@fastify/cors": "^11.0.1",
         "@fastify/sensible": "^6.0.0",
         "@fastify/type-provider-typebox": "^5.1.0",
         "@prisma/client": "^6.8.2",
@@ -31,6 +32,8 @@
     "@fastify/ajv-compiler": ["@fastify/ajv-compiler@4.0.2", "", { "dependencies": { "ajv": "^8.12.0", "ajv-formats": "^3.0.1", "fast-uri": "^3.0.0" } }, "sha512-Rkiu/8wIjpsf46Rr+Fitd3HRP+VsxUFDDeag0hs9L0ksfnwx2g7SPQQTFL0E8Qv+rfXzQOxBJnjUB9ITUDjfWQ=="],
 
     "@fastify/autoload": ["@fastify/autoload@6.3.0", "", {}, "sha512-VBYApgvqX5e+M2BAWKCxrYk9yTo8z127xsSzsSePQZlxt97tbQay74n//NDFK4ovFMgyhKSjoWtHTbdGw/RDvQ=="],
+
+    "@fastify/cors": ["@fastify/cors@11.0.1", "", { "dependencies": { "fastify-plugin": "^5.0.0", "toad-cache": "^3.7.0" } }, "sha512-dmZaE7M1f4SM8ZZuk5RhSsDJ+ezTgI7v3HHRj8Ow9CneczsPLZV6+2j2uwdaSLn8zhTv6QV0F4ZRcqdalGx1pQ=="],
 
     "@fastify/deepmerge": ["@fastify/deepmerge@2.0.2", "", {}, "sha512-3wuLdX5iiiYeZWP6bQrjqhrcvBIf0NHbQH1Ur1WbHvoiuTYUEItgygea3zs8aHpiitn0lOB8gX20u1qO+FDm7Q=="],
 

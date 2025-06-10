@@ -23,7 +23,7 @@ const createuser: FastifyPluginAsyncTypebox = async (
       const userDetail = {
         first_name: first_name.trim(),
         last_name: last_name.trim(),
-        email: email.toLocaleLowerCase(),
+        email: email.trim().toLowerCase(),
         gender: gender,
       };
 

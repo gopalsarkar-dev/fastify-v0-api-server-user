@@ -29,7 +29,7 @@ const removeaccount: FastifyPluginAsyncTypebox = async (
         // query existingUser id in database
         const existingUser = await fastify.prisma.user.findUnique({
           where: {
-            id: id,
+            uId: id,
           },
         });
 
@@ -37,7 +37,7 @@ const removeaccount: FastifyPluginAsyncTypebox = async (
           // update user info
           const user = await fastify.prisma.user.update({
             where: {
-              id: id,
+              uId: id,
             },
             data: updateUser,
           });

@@ -1,7 +1,4 @@
-import {
-  FastifyPluginAsyncTypebox,
-  Type,
-} from "@fastify/type-provider-typebox";
+import { FastifyPluginAsyncTypebox } from "@fastify/type-provider-typebox";
 
 const createuser: FastifyPluginAsyncTypebox = async (
   fastify
@@ -9,18 +6,7 @@ const createuser: FastifyPluginAsyncTypebox = async (
   fastify.route({
     method: "GET",
     url: "/allusers",
-    schema: {
-      response: {
-        "2xx": Type.Array(
-          Type.Object({
-            first_name: Type.String(),
-            last_name: Type.Union([Type.String(), Type.Null()]),
-            email: Type.String(),
-            gender: Type.String(),
-          })
-        ),
-      },
-    },
+
     handler: async (request, reply) => {
       try {
         const getAllUser = await fastify.prisma.user.findMany();
