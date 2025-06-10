@@ -20,14 +20,14 @@ const removeaccount: FastifyPluginAsyncTypebox = async (
       try {
         const existingUser = await fastify.prisma.user.findUnique({
           where: {
-            id: id,
+            uId: id,
           },
         });
 
         if (existingUser) {
           await fastify.prisma.user.delete({
             where: {
-              id: id,
+              uId: id,
             },
           });
           return reply.code(200).send({ message: "User successfully deleted" });
