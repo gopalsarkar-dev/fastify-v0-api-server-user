@@ -3,7 +3,7 @@ import {
   Type,
 } from "@fastify/type-provider-typebox";
 
-const removeaccount: FastifyPluginAsyncTypebox = async (
+const updateaccount: FastifyPluginAsyncTypebox = async (
   fastify
 ): Promise<void> => {
   fastify.route({
@@ -57,4 +57,4 @@ const removeaccount: FastifyPluginAsyncTypebox = async (
   });
 };
 
-export default removeaccount;
+export default updateaccount;
